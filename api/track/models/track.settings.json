@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "tracks",
   "info": {
-    "name": "track"
+    "name": "track",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -17,8 +18,12 @@
       "type": "json"
     },
     "leg": {
-      "via": "tracks",
-      "model": "leg"
+      "model": "leg",
+      "via": "tracks"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
     }
   }
 }

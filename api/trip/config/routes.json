@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/adventures",
-      "handler": "adventure.find",
+      "path": "/trips",
+      "handler": "trip.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/adventures/count",
-      "handler": "adventure.count",
+      "path": "/trips/count",
+      "handler": "trip.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/adventures/:id",
-      "handler": "adventure.findOne",
+      "path": "/trips/:id",
+      "handler": "trip.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/adventures",
-      "handler": "adventure.create",
+      "path": "/trips",
+      "handler": "trip.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/adventures/:id",
-      "handler": "adventure.update",
+      "path": "/trips/:id",
+      "handler": "trip.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/adventures/:id",
-      "handler": "adventure.delete",
+      "path": "/trips/:id",
+      "handler": "trip.delete",
       "config": {
         "policies": []
       }

@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "adventures",
+  "collectionName": "trips",
   "info": {
-    "name": "Trip",
-    "description": ""
+    "name": "Trip"
   },
   "options": {
     "increments": true,
@@ -14,12 +13,12 @@
     "title": {
       "type": "string"
     },
-    "start": {
-      "type": "date"
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
     },
-    "legs": {
-      "collection": "leg",
-      "via": "adventure"
+    "date": {
+      "type": "date"
     },
     "cover_image": {
       "model": "file",
@@ -31,6 +30,10 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "legs": {
+      "via": "trip",
+      "collection": "leg"
     }
   }
 }
