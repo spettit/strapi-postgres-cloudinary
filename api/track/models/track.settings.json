@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tracks",
+  "info": {
+    "name": "track"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "points": {
+      "type": "json"
+    },
+    "leg": {
+      "via": "tracks",
+      "model": "leg"
+    }
+  }
+}

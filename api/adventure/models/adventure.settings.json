@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "adventures",
+  "info": {
+    "name": "Trip",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "start": {
+      "type": "date"
+    },
+    "legs": {
+      "collection": "leg",
+      "via": "adventure"
+    },
+    "cover_image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

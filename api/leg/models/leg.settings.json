@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "legs",
+  "info": {
+    "name": "Leg"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "start": {
+      "type": "datetime"
+    },
+    "tracks": {
+      "collection": "track",
+      "via": "leg"
+    },
+    "adventure": {
+      "via": "legs",
+      "model": "adventure"
+    }
+  }
+}
