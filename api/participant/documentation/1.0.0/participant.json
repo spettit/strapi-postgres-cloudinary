@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/trips": {
+    "/participants": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -12,7 +12,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Trip"
+                    "$ref": "#/components/schemas/Participant"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Trip"
+          "Participant"
         ],
         "parameters": [
           {
@@ -201,7 +201,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Trip"
+                  "$ref": "#/components/schemas/Participant"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Trip"
+          "Participant"
         ],
         "requestBody": {
           "description": "",
@@ -247,14 +247,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewTrip"
+                "$ref": "#/components/schemas/NewParticipant"
               }
             }
           }
         }
       }
     },
-    "/trips/count": {
+    "/participants/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -306,12 +306,12 @@
         },
         "summary": "",
         "tags": [
-          "Trip"
+          "Participant"
         ],
         "parameters": []
       }
     },
-    "/trips/{id}": {
+    "/participants/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -321,7 +321,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Trip"
+                  "$ref": "#/components/schemas/Participant"
                 }
               }
             }
@@ -359,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Trip"
+          "Participant"
         ],
         "parameters": [
           {
@@ -383,7 +383,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Trip"
+                  "$ref": "#/components/schemas/Participant"
                 }
               }
             }
@@ -421,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Trip"
+          "Participant"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewTrip"
+                "$ref": "#/components/schemas/NewParticipant"
               }
             }
           }
@@ -495,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Trip"
+          "Participant"
         ],
         "parameters": [
           {
@@ -514,7 +514,7 @@
   },
   "components": {
     "schemas": {
-      "Trip": {
+      "Participant": {
         "required": [
           "id"
         ],
@@ -522,17 +522,13 @@
           "id": {
             "type": "string"
           },
-          "title": {
+          "first_name": {
             "type": "string"
           },
-          "slug": {
-            "type": "uid"
+          "last_name": {
+            "type": "string"
           },
-          "date": {
-            "type": "string",
-            "format": "date"
-          },
-          "cover_image": {
+          "pic": {
             "required": [
               "id",
               "name",
@@ -599,7 +595,10 @@
               }
             }
           },
-          "legs": {
+          "bio": {
+            "type": "string"
+          },
+          "trips": {
             "type": "array",
             "items": {
               "required": [
@@ -612,20 +611,29 @@
                 "title": {
                   "type": "string"
                 },
-                "start": {
+                "slug": {
+                  "type": "uid"
+                },
+                "date": {
                   "type": "string"
                 },
-                "tracks": {
+                "cover_image": {
+                  "type": "string"
+                },
+                "legs": {
                   "type": "array",
                   "items": {
                     "type": "string"
                   }
                 },
-                "trip": {
-                  "type": "string"
+                "participants": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
-                "slug": {
-                  "type": "uid"
+                "type": {
+                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"
@@ -639,59 +647,8 @@
               }
             }
           },
-          "participants": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "first_name": {
-                  "type": "string"
-                },
-                "last_name": {
-                  "type": "string"
-                },
-                "pic": {
-                  "type": "string"
-                },
-                "bio": {
-                  "type": "string"
-                },
-                "trips": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "slug": {
-                  "type": "uid"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "type": {
-            "type": "string",
-            "enum": [
-              "Walking",
-              "Running",
-              "Cycling",
-              "Motorcycling",
-              "Sailing",
-              "Skiing"
-            ]
+          "slug": {
+            "type": "uid"
           },
           "published_at": {
             "type": "string",
@@ -699,40 +656,25 @@
           }
         }
       },
-      "NewTrip": {
+      "NewParticipant": {
         "properties": {
-          "title": {
+          "first_name": {
             "type": "string"
+          },
+          "last_name": {
+            "type": "string"
+          },
+          "bio": {
+            "type": "string"
+          },
+          "trips": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "slug": {
             "type": "uid"
-          },
-          "date": {
-            "type": "string",
-            "format": "date"
-          },
-          "legs": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "participants": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "type": {
-            "type": "string",
-            "enum": [
-              "Walking",
-              "Running",
-              "Cycling",
-              "Motorcycling",
-              "Sailing",
-              "Skiing"
-            ]
           },
           "published_at": {
             "type": "string",
@@ -750,7 +692,7 @@
   },
   "tags": [
     {
-      "name": "Trip"
+      "name": "Participant"
     }
   ]
 }

@@ -22,8 +22,8 @@
       "collection": "track"
     },
     "trip": {
-      "model": "trip",
-      "via": "legs"
+      "via": "legs",
+      "model": "trip"
     },
     "slug": {
       "type": "uid",

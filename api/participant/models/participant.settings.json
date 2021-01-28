@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "participants",
+  "info": {
+    "name": "Participant"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "first_name": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "pic": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "bio": {
+      "type": "richtext"
+    },
+    "trips": {
+      "via": "participants",
+      "collection": "trip",
+      "dominant": true
+    },
+    "slug": {
+      "type": "uid"
+    }
+  }
+}
