@@ -50,6 +50,18 @@
         "Sailing",
         "Skiing"
       ]
+    },
+    "region": {
+      "type": "string"
+    },
+    "distance": {
+      "type": "integer"
+    },
+    "duration": {
+      "type": "integer"
+    },
+    "flag_coords": {
+      "type": "json"
     }
   }
 }

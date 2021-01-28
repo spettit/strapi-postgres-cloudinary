@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "01/27/2021 11:27:25 AM"
+    "x-generation-date": "01/28/2021 4:50:54 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4785,6 +4785,18 @@
               "type": {
                 "type": "string"
               },
+              "region": {
+                "type": "string"
+              },
+              "distance": {
+                "type": "integer"
+              },
+              "duration": {
+                "type": "integer"
+              },
+              "flag_coords": {
+                "type": "object"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -4958,6 +4970,18 @@
                 },
                 "type": {
                   "type": "string"
+                },
+                "region": {
+                  "type": "string"
+                },
+                "distance": {
+                  "type": "integer"
+                },
+                "duration": {
+                  "type": "integer"
+                },
+                "flag_coords": {
+                  "type": "object"
                 },
                 "published_at": {
                   "type": "string"
@@ -5398,6 +5422,18 @@
               "Skiing"
             ]
           },
+          "region": {
+            "type": "string"
+          },
+          "distance": {
+            "type": "integer"
+          },
+          "duration": {
+            "type": "integer"
+          },
+          "flag_coords": {
+            "type": "object"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -5438,6 +5474,18 @@
               "Sailing",
               "Skiing"
             ]
+          },
+          "region": {
+            "type": "string"
+          },
+          "distance": {
+            "type": "integer"
+          },
+          "duration": {
+            "type": "integer"
+          },
+          "flag_coords": {
+            "type": "object"
           },
           "published_at": {
             "type": "string",

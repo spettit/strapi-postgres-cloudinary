@@ -598,6 +598,18 @@
               "type": {
                 "type": "string"
               },
+              "region": {
+                "type": "string"
+              },
+              "distance": {
+                "type": "integer"
+              },
+              "duration": {
+                "type": "integer"
+              },
+              "flag_coords": {
+                "type": "object"
+              },
               "published_at": {
                 "type": "string"
               },

@@ -693,6 +693,18 @@
               "Skiing"
             ]
           },
+          "region": {
+            "type": "string"
+          },
+          "distance": {
+            "type": "integer"
+          },
+          "duration": {
+            "type": "integer"
+          },
+          "flag_coords": {
+            "type": "object"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -733,6 +745,18 @@
               "Sailing",
               "Skiing"
             ]
+          },
+          "region": {
+            "type": "string"
+          },
+          "distance": {
+            "type": "integer"
+          },
+          "duration": {
+            "type": "integer"
+          },
+          "flag_coords": {
+            "type": "object"
           },
           "published_at": {
             "type": "string",
