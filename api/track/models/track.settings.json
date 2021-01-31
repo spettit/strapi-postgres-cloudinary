@@ -24,6 +24,9 @@
     "slug": {
       "type": "uid",
       "targetField": "title"
+    },
+    "minified_points": {
+      "type": "json"
     }
   }
 }

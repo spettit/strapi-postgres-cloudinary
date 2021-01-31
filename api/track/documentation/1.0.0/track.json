@@ -568,6 +568,9 @@
           "slug": {
             "type": "uid"
           },
+          "minified_points": {
+            "type": "object"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -587,6 +590,9 @@
           },
           "slug": {
             "type": "uid"
+          },
+          "minified_points": {
+            "type": "object"
           },
           "published_at": {
             "type": "string",

@@ -551,6 +551,9 @@
                 "slug": {
                   "type": "uid"
                 },
+                "minified_points": {
+                  "type": "object"
+                },
                 "published_at": {
                   "type": "string"
                 },
