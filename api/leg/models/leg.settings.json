@@ -18,16 +18,19 @@
       "type": "datetime"
     },
     "tracks": {
-      "via": "leg",
-      "collection": "track"
+      "collection": "track",
+      "via": "leg"
     },
     "trip": {
-      "via": "legs",
-      "model": "trip"
+      "model": "trip",
+      "via": "legs"
     },
     "slug": {
       "type": "uid",
       "targetField": "title"
+    },
+    "end": {
+      "type": "datetime"
     }
   }
 }

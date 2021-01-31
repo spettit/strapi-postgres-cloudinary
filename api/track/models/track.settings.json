@@ -18,8 +18,8 @@
       "type": "json"
     },
     "leg": {
-      "model": "leg",
-      "via": "tracks"
+      "via": "tracks",
+      "model": "leg"
     },
     "slug": {
       "type": "uid",

@@ -554,6 +554,9 @@
               "slug": {
                 "type": "uid"
               },
+              "end": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },
