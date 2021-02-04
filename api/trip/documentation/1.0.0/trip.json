@@ -630,6 +630,21 @@
                 "end": {
                   "type": "string"
                 },
+                "distance": {
+                  "type": "integer"
+                },
+                "average_speed": {
+                  "type": "integer"
+                },
+                "top_speed": {
+                  "type": "integer"
+                },
+                "highest_altitude": {
+                  "type": "integer"
+                },
+                "lowest_altitude": {
+                  "type": "integer"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -699,10 +714,10 @@
           "region": {
             "type": "string"
           },
-          "distance": {
+          "distance_km": {
             "type": "integer"
           },
-          "duration": {
+          "duration_days": {
             "type": "integer"
           },
           "flag_coords": {
@@ -752,10 +767,10 @@
           "region": {
             "type": "string"
           },
-          "distance": {
+          "distance_km": {
             "type": "integer"
           },
-          "duration": {
+          "duration_days": {
             "type": "integer"
           },
           "flag_coords": {

@@ -33,8 +33,8 @@
       "required": false
     },
     "legs": {
-      "via": "trip",
-      "collection": "leg"
+      "collection": "leg",
+      "via": "trip"
     },
     "participants": {
       "collection": "participant",
@@ -54,10 +54,10 @@
     "region": {
       "type": "string"
     },
-    "distance": {
+    "distance_km": {
       "type": "integer"
     },
-    "duration": {
+    "duration_days": {
       "type": "integer"
     },
     "flag_coords": {

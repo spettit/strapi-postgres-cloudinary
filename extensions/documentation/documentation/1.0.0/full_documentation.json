@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "01/31/2021 10:43:36 PM"
+    "x-generation-date": "02/04/2021 3:35:30 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4741,6 +4741,9 @@
                 "minified_points": {
                   "type": "object"
                 },
+                "time_offset_minutes": {
+                  "type": "integer"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -4791,10 +4794,10 @@
               "region": {
                 "type": "string"
               },
-              "distance": {
+              "distance_km": {
                 "type": "integer"
               },
-              "duration": {
+              "duration_days": {
                 "type": "integer"
               },
               "flag_coords": {
@@ -4817,6 +4820,21 @@
           "end": {
             "type": "string",
             "format": "date-time"
+          },
+          "distance": {
+            "type": "integer"
+          },
+          "average_speed": {
+            "type": "integer"
+          },
+          "top_speed": {
+            "type": "integer"
+          },
+          "highest_altitude": {
+            "type": "integer"
+          },
+          "lowest_altitude": {
+            "type": "integer"
           },
           "published_at": {
             "type": "string",
@@ -4848,6 +4866,21 @@
           "end": {
             "type": "string",
             "format": "date-time"
+          },
+          "distance": {
+            "type": "integer"
+          },
+          "average_speed": {
+            "type": "integer"
+          },
+          "top_speed": {
+            "type": "integer"
+          },
+          "highest_altitude": {
+            "type": "integer"
+          },
+          "lowest_altitude": {
+            "type": "integer"
           },
           "published_at": {
             "type": "string",
@@ -4985,10 +5018,10 @@
                 "region": {
                   "type": "string"
                 },
-                "distance": {
+                "distance_km": {
                   "type": "integer"
                 },
-                "duration": {
+                "duration_days": {
                   "type": "integer"
                 },
                 "flag_coords": {
@@ -5211,6 +5244,21 @@
               "end": {
                 "type": "string"
               },
+              "distance": {
+                "type": "integer"
+              },
+              "average_speed": {
+                "type": "integer"
+              },
+              "top_speed": {
+                "type": "integer"
+              },
+              "highest_altitude": {
+                "type": "integer"
+              },
+              "lowest_altitude": {
+                "type": "integer"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -5227,6 +5275,9 @@
           },
           "minified_points": {
             "type": "object"
+          },
+          "time_offset_minutes": {
+            "type": "integer"
           },
           "published_at": {
             "type": "string",
@@ -5250,6 +5301,9 @@
           },
           "minified_points": {
             "type": "object"
+          },
+          "time_offset_minutes": {
+            "type": "integer"
           },
           "published_at": {
             "type": "string",
@@ -5379,6 +5433,21 @@
                 "end": {
                   "type": "string"
                 },
+                "distance": {
+                  "type": "integer"
+                },
+                "average_speed": {
+                  "type": "integer"
+                },
+                "top_speed": {
+                  "type": "integer"
+                },
+                "highest_altitude": {
+                  "type": "integer"
+                },
+                "lowest_altitude": {
+                  "type": "integer"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -5448,10 +5517,10 @@
           "region": {
             "type": "string"
           },
-          "distance": {
+          "distance_km": {
             "type": "integer"
           },
-          "duration": {
+          "duration_days": {
             "type": "integer"
           },
           "flag_coords": {
@@ -5501,10 +5570,10 @@
           "region": {
             "type": "string"
           },
-          "distance": {
+          "distance_km": {
             "type": "integer"
           },
-          "duration": {
+          "duration_days": {
             "type": "integer"
           },
           "flag_coords": {
