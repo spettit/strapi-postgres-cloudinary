@@ -22,8 +22,8 @@
       "via": "leg"
     },
     "trip": {
-      "via": "legs",
-      "model": "trip"
+      "model": "trip",
+      "via": "legs"
     },
     "slug": {
       "type": "uid",
@@ -45,6 +45,9 @@
       "type": "integer"
     },
     "lowest_altitude": {
+      "type": "integer"
+    },
+    "time_offset_minutes": {
       "type": "integer"
     }
   }

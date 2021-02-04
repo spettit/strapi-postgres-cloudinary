@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "02/04/2021 3:35:30 PM"
+    "x-generation-date": "02/04/2021 3:50:23 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4741,9 +4741,6 @@
                 "minified_points": {
                   "type": "object"
                 },
-                "time_offset_minutes": {
-                  "type": "integer"
-                },
                 "published_at": {
                   "type": "string"
                 },
@@ -4836,6 +4833,9 @@
           "lowest_altitude": {
             "type": "integer"
           },
+          "time_offset_minutes": {
+            "type": "integer"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -4880,6 +4880,9 @@
             "type": "integer"
           },
           "lowest_altitude": {
+            "type": "integer"
+          },
+          "time_offset_minutes": {
             "type": "integer"
           },
           "published_at": {
@@ -5259,6 +5262,9 @@
               "lowest_altitude": {
                 "type": "integer"
               },
+              "time_offset_minutes": {
+                "type": "integer"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -5275,9 +5281,6 @@
           },
           "minified_points": {
             "type": "object"
-          },
-          "time_offset_minutes": {
-            "type": "integer"
           },
           "published_at": {
             "type": "string",
@@ -5301,9 +5304,6 @@
           },
           "minified_points": {
             "type": "object"
-          },
-          "time_offset_minutes": {
-            "type": "integer"
           },
           "published_at": {
             "type": "string",
@@ -5446,6 +5446,9 @@
                   "type": "integer"
                 },
                 "lowest_altitude": {
+                  "type": "integer"
+                },
+                "time_offset_minutes": {
                   "type": "integer"
                 },
                 "published_at": {

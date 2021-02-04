@@ -27,9 +27,6 @@
     },
     "minified_points": {
       "type": "json"
-    },
-    "time_offset_minutes": {
-      "type": "integer"
     }
   }
 }

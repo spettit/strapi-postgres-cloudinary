@@ -572,6 +572,9 @@
               "lowest_altitude": {
                 "type": "integer"
               },
+              "time_offset_minutes": {
+                "type": "integer"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -588,9 +591,6 @@
           },
           "minified_points": {
             "type": "object"
-          },
-          "time_offset_minutes": {
-            "type": "integer"
           },
           "published_at": {
             "type": "string",
@@ -614,9 +614,6 @@
           },
           "minified_points": {
             "type": "object"
-          },
-          "time_offset_minutes": {
-            "type": "integer"
           },
           "published_at": {
             "type": "string",

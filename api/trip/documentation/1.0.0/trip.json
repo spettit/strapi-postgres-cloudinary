@@ -645,6 +645,9 @@
                 "lowest_altitude": {
                   "type": "integer"
                 },
+                "time_offset_minutes": {
+                  "type": "integer"
+                },
                 "published_at": {
                   "type": "string"
                 },
