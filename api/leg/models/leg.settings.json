@@ -22,8 +22,8 @@
       "via": "leg"
     },
     "trip": {
-      "via": "legs",
-      "model": "trip"
+      "model": "trip",
+      "via": "legs"
     },
     "slug": {
       "type": "uid",
@@ -49,6 +49,11 @@
     },
     "time_offset_minutes": {
       "type": "integer"
+    },
+    "gallery": {
+      "type": "component",
+      "repeatable": true,
+      "component": "gallery-picture.gallery"
     }
   }
 }

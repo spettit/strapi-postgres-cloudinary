@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_gallery_galleries",
+  "info": {
+    "name": "picture",
+    "icon": "images",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "timestamp": {
+      "type": "datetime"
+    },
+    "pic": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

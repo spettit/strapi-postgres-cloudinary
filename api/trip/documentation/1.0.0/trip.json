@@ -648,6 +648,9 @@
                 "time_offset_minutes": {
                   "type": "integer"
                 },
+                "gallery": {
+                  "type": "component"
+                },
                 "published_at": {
                   "type": "string"
                 },
