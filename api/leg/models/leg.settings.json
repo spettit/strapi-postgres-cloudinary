@@ -22,8 +22,8 @@
       "via": "leg"
     },
     "trip": {
-      "model": "trip",
-      "via": "legs"
+      "via": "legs",
+      "model": "trip"
     },
     "slug": {
       "type": "uid",

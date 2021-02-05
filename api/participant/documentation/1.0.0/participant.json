@@ -647,6 +647,9 @@
                 "flag_coords": {
                   "type": "object"
                 },
+                "sub_title": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
