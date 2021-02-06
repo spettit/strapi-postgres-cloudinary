@@ -650,6 +650,9 @@
                 "sub_title": {
                   "type": "string"
                 },
+                "gallery": {
+                  "type": "component"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -664,6 +667,70 @@
           },
           "slug": {
             "type": "uid"
+          },
+          "owned_trips": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "slug": {
+                "type": "uid"
+              },
+              "date": {
+                "type": "string"
+              },
+              "cover_image": {
+                "type": "string"
+              },
+              "legs": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "participants": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "type": {
+                "type": "string"
+              },
+              "region": {
+                "type": "string"
+              },
+              "distance_km": {
+                "type": "integer"
+              },
+              "duration_days": {
+                "type": "integer"
+              },
+              "flag_coords": {
+                "type": "object"
+              },
+              "sub_title": {
+                "type": "string"
+              },
+              "gallery": {
+                "type": "component"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
           },
           "published_at": {
             "type": "string",
@@ -690,6 +757,9 @@
           },
           "slug": {
             "type": "uid"
+          },
+          "owned_trips": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

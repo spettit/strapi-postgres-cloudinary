@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "participants",
   "info": {
-    "name": "Participant"
+    "name": "Participants",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -31,12 +32,15 @@
       "type": "richtext"
     },
     "trips": {
-      "via": "participants",
       "collection": "trip",
+      "via": "participants",
       "dominant": true
     },
     "slug": {
       "type": "uid"
+    },
+    "owned_trips": {
+      "collection": "trip"
     }
   }
 }

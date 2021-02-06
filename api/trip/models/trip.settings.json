@@ -33,12 +33,12 @@
       "required": false
     },
     "legs": {
-      "via": "trip",
-      "collection": "leg"
+      "collection": "leg",
+      "via": "trip"
     },
     "participants": {
-      "collection": "participant",
-      "via": "trips"
+      "via": "trips",
+      "collection": "participant"
     },
     "type": {
       "type": "enumeration",
@@ -65,6 +65,11 @@
     },
     "sub_title": {
       "type": "string"
+    },
+    "gallery": {
+      "type": "component",
+      "repeatable": true,
+      "component": "gallery-picture.gallery"
     }
   }
 }

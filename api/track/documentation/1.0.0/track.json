@@ -575,8 +575,8 @@
               "time_offset_minutes": {
                 "type": "integer"
               },
-              "gallery": {
-                "type": "component"
+              "mini_points": {
+                "type": "object"
               },
               "published_at": {
                 "type": "string"
