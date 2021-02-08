@@ -746,11 +746,11 @@
                 "id": {
                   "type": "string"
                 },
-                "timestamp": {
+                "datetime": {
                   "type": "string",
                   "format": "date-time"
                 },
-                "pic": {
+                "image": {
                   "required": [
                     "id",
                     "name",
@@ -818,6 +818,15 @@
                   }
                 },
                 "title": {
+                  "type": "string"
+                },
+                "timestamp": {
+                  "type": "integer"
+                },
+                "location": {
+                  "type": "object"
+                },
+                "camera": {
                   "type": "string"
                 }
               }
@@ -890,11 +899,11 @@
                 "id": {
                   "type": "string"
                 },
-                "timestamp": {
+                "datetime": {
                   "type": "string",
                   "format": "date-time"
                 },
-                "pic": {
+                "image": {
                   "required": [
                     "id",
                     "name",
@@ -962,6 +971,15 @@
                   }
                 },
                 "title": {
+                  "type": "string"
+                },
+                "timestamp": {
+                  "type": "integer"
+                },
+                "location": {
+                  "type": "object"
+                },
+                "camera": {
                   "type": "string"
                 }
               }

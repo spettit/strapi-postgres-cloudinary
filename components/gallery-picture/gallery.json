@@ -7,10 +7,10 @@
   },
   "options": {},
   "attributes": {
-    "timestamp": {
+    "datetime": {
       "type": "datetime"
     },
-    "pic": {
+    "image": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -22,6 +22,15 @@
       "required": false
     },
     "title": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "biginteger"
+    },
+    "location": {
+      "type": "json"
+    },
+    "camera": {
       "type": "string"
     }
   }
