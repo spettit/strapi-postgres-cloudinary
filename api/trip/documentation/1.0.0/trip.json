@@ -750,7 +750,7 @@
                   "type": "string",
                   "format": "date-time"
                 },
-                "image": {
+                "pic": {
                   "required": [
                     "id",
                     "name",
@@ -903,7 +903,7 @@
                   "type": "string",
                   "format": "date-time"
                 },
-                "image": {
+                "pic": {
                   "required": [
                     "id",
                     "name",

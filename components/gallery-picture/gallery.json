@@ -10,7 +10,7 @@
     "datetime": {
       "type": "datetime"
     },
-    "image": {
+    "pic": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
