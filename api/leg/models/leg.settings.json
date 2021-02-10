@@ -18,8 +18,8 @@
       "type": "datetime"
     },
     "tracks": {
-      "collection": "track",
-      "via": "leg"
+      "via": "leg",
+      "collection": "track"
     },
     "trip": {
       "via": "legs",

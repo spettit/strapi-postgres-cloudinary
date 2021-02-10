@@ -650,9 +650,6 @@
                 "sub_title": {
                   "type": "string"
                 },
-                "gallery": {
-                  "type": "component"
-                },
                 "photos": {
                   "type": "array",
                   "items": {
@@ -724,9 +721,6 @@
               "sub_title": {
                 "type": "string"
               },
-              "gallery": {
-                "type": "component"
-              },
               "photos": {
                 "type": "array",
                 "items": {
@@ -744,7 +738,7 @@
               }
             }
           },
-          "photos": {
+          "photos_in": {
             "type": "array",
             "items": {
               "required": [
@@ -772,11 +766,20 @@
                 "leg": {
                   "type": "string"
                 },
+                "camera": {
+                  "type": "string"
+                },
+                "time_offset_minutes": {
+                  "type": "integer"
+                },
                 "participants": {
                   "type": "array",
                   "items": {
                     "type": "string"
                   }
+                },
+                "taker": {
+                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"
@@ -787,6 +790,58 @@
                 "updated_by": {
                   "type": "string"
                 }
+              }
+            }
+          },
+          "photo_taken": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "image": {
+                "type": "string"
+              },
+              "timestamp": {
+                "type": "string"
+              },
+              "location": {
+                "type": "object"
+              },
+              "trip": {
+                "type": "string"
+              },
+              "leg": {
+                "type": "string"
+              },
+              "camera": {
+                "type": "string"
+              },
+              "time_offset_minutes": {
+                "type": "integer"
+              },
+              "participants": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "taker": {
+                "type": "string"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           },
@@ -819,11 +874,14 @@
           "owned_trips": {
             "type": "string"
           },
-          "photos": {
+          "photos_in": {
             "type": "array",
             "items": {
               "type": "string"
             }
+          },
+          "photo_taken": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

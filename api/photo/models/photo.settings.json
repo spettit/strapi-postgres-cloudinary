@@ -32,17 +32,27 @@
       "type": "json"
     },
     "trip": {
-      "model": "trip",
-      "via": "photos"
+      "via": "photos",
+      "model": "trip"
     },
     "leg": {
       "model": "leg",
       "via": "photos"
     },
+    "camera": {
+      "type": "string"
+    },
+    "time_offset_minutes": {
+      "type": "biginteger"
+    },
     "participants": {
+      "via": "photos_in",
       "collection": "participant",
-      "via": "photos",
       "dominant": true
+    },
+    "taker": {
+      "via": "photo_taken",
+      "model": "participant"
     }
   }
 }

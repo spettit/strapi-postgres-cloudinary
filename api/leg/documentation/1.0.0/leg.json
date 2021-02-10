@@ -551,9 +551,6 @@
                 "slug": {
                   "type": "uid"
                 },
-                "minified_points": {
-                  "type": "object"
-                },
                 "published_at": {
                   "type": "string"
                 },
@@ -615,9 +612,6 @@
               },
               "sub_title": {
                 "type": "string"
-              },
-              "gallery": {
-                "type": "component"
               },
               "photos": {
                 "type": "array",
@@ -697,6 +691,15 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "camera": {
+                  "type": "string"
+                },
+                "taker": {
+                  "type": "string"
+                },
+                "time_offset_minutes": {
+                  "type": "integer"
                 },
                 "published_at": {
                   "type": "string"

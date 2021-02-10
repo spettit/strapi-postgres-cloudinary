@@ -42,9 +42,13 @@
     "owned_trips": {
       "collection": "trip"
     },
-    "photos": {
-      "via": "participants",
-      "collection": "photo"
+    "photos_in": {
+      "collection": "photo",
+      "via": "participants"
+    },
+    "photo_taken": {
+      "model": "photo",
+      "via": "taker"
     }
   }
 }

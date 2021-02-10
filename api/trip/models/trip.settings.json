@@ -66,14 +66,9 @@
     "sub_title": {
       "type": "string"
     },
-    "gallery": {
-      "type": "component",
-      "repeatable": true,
-      "component": "gallery-picture.gallery"
-    },
     "photos": {
-      "via": "trip",
-      "collection": "photo"
+      "collection": "photo",
+      "via": "trip"
     }
   }
 }

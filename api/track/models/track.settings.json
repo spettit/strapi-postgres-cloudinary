@@ -18,15 +18,12 @@
       "type": "json"
     },
     "leg": {
-      "via": "tracks",
-      "model": "leg"
+      "model": "leg",
+      "via": "tracks"
     },
     "slug": {
       "type": "uid",
       "targetField": "title"
-    },
-    "minified_points": {
-      "type": "json"
     }
   }
 }
