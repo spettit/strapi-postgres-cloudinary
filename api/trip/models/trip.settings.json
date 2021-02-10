@@ -65,7 +65,7 @@
       "component": "leg-component.leg-component"
     },
     "flag_coords": {
-      "type": "string"
+      "type": "json"
     }
   }
 }

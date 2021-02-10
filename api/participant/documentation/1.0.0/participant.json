@@ -645,7 +645,7 @@
                   "type": "component"
                 },
                 "flag_coords": {
-                  "type": "string"
+                  "type": "object"
                 },
                 "published_at": {
                   "type": "string"
@@ -707,7 +707,7 @@
                 "type": "component"
               },
               "flag_coords": {
-                "type": "string"
+                "type": "object"
               },
               "published_at": {
                 "type": "string"
