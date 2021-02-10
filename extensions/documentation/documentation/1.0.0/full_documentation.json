@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "02/10/2021 6:19:35 PM"
+    "x-generation-date": "02/10/2021 8:04:54 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -6053,37 +6053,6 @@
                     }
                   }
                 },
-                "tracks": {
-                  "required": [
-                    "id"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "title": {
-                      "type": "string"
-                    },
-                    "points": {
-                      "type": "object"
-                    },
-                    "leg": {
-                      "type": "string"
-                    },
-                    "slug": {
-                      "type": "uid"
-                    },
-                    "published_at": {
-                      "type": "string"
-                    },
-                    "created_by": {
-                      "type": "string"
-                    },
-                    "updated_by": {
-                      "type": "string"
-                    }
-                  }
-                },
                 "average_speed": {
                   "type": "number"
                 },
@@ -6098,6 +6067,26 @@
                 },
                 "time_offset_minutes": {
                   "type": "integer"
+                },
+                "tracks": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "id"
+                    ],
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "title": {
+                        "type": "string"
+                      },
+                      "track_slug": {
+                        "type": "string"
+                      }
+                    }
+                  }
                 }
               }
             }
@@ -6359,37 +6348,6 @@
                     }
                   }
                 },
-                "tracks": {
-                  "required": [
-                    "id"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "title": {
-                      "type": "string"
-                    },
-                    "points": {
-                      "type": "object"
-                    },
-                    "leg": {
-                      "type": "string"
-                    },
-                    "slug": {
-                      "type": "uid"
-                    },
-                    "published_at": {
-                      "type": "string"
-                    },
-                    "created_by": {
-                      "type": "string"
-                    },
-                    "updated_by": {
-                      "type": "string"
-                    }
-                  }
-                },
                 "average_speed": {
                   "type": "number"
                 },
@@ -6404,6 +6362,26 @@
                 },
                 "time_offset_minutes": {
                   "type": "integer"
+                },
+                "tracks": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "id"
+                    ],
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "title": {
+                        "type": "string"
+                      },
+                      "track_slug": {
+                        "type": "string"
+                      }
+                    }
+                  }
                 }
               }
             }

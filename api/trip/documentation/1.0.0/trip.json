@@ -875,37 +875,6 @@
                     }
                   }
                 },
-                "tracks": {
-                  "required": [
-                    "id"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "title": {
-                      "type": "string"
-                    },
-                    "points": {
-                      "type": "object"
-                    },
-                    "leg": {
-                      "type": "string"
-                    },
-                    "slug": {
-                      "type": "uid"
-                    },
-                    "published_at": {
-                      "type": "string"
-                    },
-                    "created_by": {
-                      "type": "string"
-                    },
-                    "updated_by": {
-                      "type": "string"
-                    }
-                  }
-                },
                 "average_speed": {
                   "type": "number"
                 },
@@ -920,6 +889,26 @@
                 },
                 "time_offset_minutes": {
                   "type": "integer"
+                },
+                "tracks": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "id"
+                    ],
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "title": {
+                        "type": "string"
+                      },
+                      "track_slug": {
+                        "type": "string"
+                      }
+                    }
+                  }
                 }
               }
             }
@@ -1181,37 +1170,6 @@
                     }
                   }
                 },
-                "tracks": {
-                  "required": [
-                    "id"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "title": {
-                      "type": "string"
-                    },
-                    "points": {
-                      "type": "object"
-                    },
-                    "leg": {
-                      "type": "string"
-                    },
-                    "slug": {
-                      "type": "uid"
-                    },
-                    "published_at": {
-                      "type": "string"
-                    },
-                    "created_by": {
-                      "type": "string"
-                    },
-                    "updated_by": {
-                      "type": "string"
-                    }
-                  }
-                },
                 "average_speed": {
                   "type": "number"
                 },
@@ -1226,6 +1184,26 @@
                 },
                 "time_offset_minutes": {
                   "type": "integer"
+                },
+                "tracks": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "id"
+                    ],
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "title": {
+                        "type": "string"
+                      },
+                      "track_slug": {
+                        "type": "string"
+                      }
+                    }
+                  }
                 }
               }
             }

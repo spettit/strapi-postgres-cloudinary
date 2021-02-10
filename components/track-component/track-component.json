@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_track_component_track_components",
+  "info": {
+    "name": "track-component",
+    "icon": "angle-double-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "track_slug": {
+      "type": "string"
+    }
+  }
+}

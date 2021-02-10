@@ -24,9 +24,6 @@
       "repeatable": true,
       "component": "gallery-component.gallery"
     },
-    "tracks": {
-      "collection": "track"
-    },
     "average_speed": {
       "type": "decimal"
     },
@@ -41,6 +38,11 @@
     },
     "time_offset_minutes": {
       "type": "biginteger"
+    },
+    "tracks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "track-component.track-component"
     }
   }
 }
