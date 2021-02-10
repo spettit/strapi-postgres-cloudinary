@@ -563,73 +563,6 @@
               }
             }
           },
-          "trip": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "title": {
-                "type": "string"
-              },
-              "slug": {
-                "type": "uid"
-              },
-              "date": {
-                "type": "string"
-              },
-              "cover_image": {
-                "type": "string"
-              },
-              "legs": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "participants": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "type": {
-                "type": "string"
-              },
-              "region": {
-                "type": "string"
-              },
-              "distance_km": {
-                "type": "integer"
-              },
-              "duration_days": {
-                "type": "integer"
-              },
-              "flag_coords": {
-                "type": "object"
-              },
-              "sub_title": {
-                "type": "string"
-              },
-              "photos": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
           "slug": {
             "type": "uid"
           },
@@ -661,6 +594,7 @@
           "photos": {
             "type": "array",
             "items": {
+              "type": "object",
               "required": [
                 "id"
               ],
@@ -668,50 +602,180 @@
                 "id": {
                   "type": "string"
                 },
+                "datetime": {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                "pic": {
+                  "required": [
+                    "id",
+                    "name",
+                    "hash",
+                    "mime",
+                    "size",
+                    "url",
+                    "provider"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "alternativeText": {
+                      "type": "string"
+                    },
+                    "caption": {
+                      "type": "string"
+                    },
+                    "width": {
+                      "type": "integer"
+                    },
+                    "height": {
+                      "type": "integer"
+                    },
+                    "formats": {
+                      "type": "object"
+                    },
+                    "hash": {
+                      "type": "string"
+                    },
+                    "ext": {
+                      "type": "string"
+                    },
+                    "mime": {
+                      "type": "string"
+                    },
+                    "size": {
+                      "type": "number"
+                    },
+                    "url": {
+                      "type": "string"
+                    },
+                    "previewUrl": {
+                      "type": "string"
+                    },
+                    "provider": {
+                      "type": "string"
+                    },
+                    "provider_metadata": {
+                      "type": "object"
+                    },
+                    "related": {
+                      "type": "string"
+                    },
+                    "created_by": {
+                      "type": "string"
+                    },
+                    "updated_by": {
+                      "type": "string"
+                    }
+                  }
+                },
                 "title": {
                   "type": "string"
                 },
-                "image": {
-                  "type": "string"
-                },
                 "timestamp": {
-                  "type": "string"
-                },
-                "location": {
-                  "type": "object"
-                },
-                "trip": {
-                  "type": "string"
-                },
-                "leg": {
-                  "type": "string"
-                },
-                "participants": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
+                  "type": "integer"
                 },
                 "camera": {
                   "type": "string"
                 },
-                "taker": {
-                  "type": "string"
+                "photographer": {
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "first_name": {
+                      "type": "string"
+                    },
+                    "last_name": {
+                      "type": "string"
+                    },
+                    "pic": {
+                      "type": "string"
+                    },
+                    "bio": {
+                      "type": "string"
+                    },
+                    "trips": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "slug": {
+                      "type": "uid"
+                    },
+                    "owned_trips": {
+                      "type": "string"
+                    },
+                    "published_at": {
+                      "type": "string"
+                    },
+                    "created_by": {
+                      "type": "string"
+                    },
+                    "updated_by": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "participants": {
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "first_name": {
+                      "type": "string"
+                    },
+                    "last_name": {
+                      "type": "string"
+                    },
+                    "pic": {
+                      "type": "string"
+                    },
+                    "bio": {
+                      "type": "string"
+                    },
+                    "trips": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "slug": {
+                      "type": "uid"
+                    },
+                    "owned_trips": {
+                      "type": "string"
+                    },
+                    "published_at": {
+                      "type": "string"
+                    },
+                    "created_by": {
+                      "type": "string"
+                    },
+                    "updated_by": {
+                      "type": "string"
+                    }
+                  }
                 },
                 "time_offset_minutes": {
                   "type": "integer"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
                 }
               }
             }
+          },
+          "location": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -734,9 +798,6 @@
               "type": "string"
             }
           },
-          "trip": {
-            "type": "string"
-          },
           "slug": {
             "type": "uid"
           },
@@ -768,8 +829,188 @@
           "photos": {
             "type": "array",
             "items": {
-              "type": "string"
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "datetime": {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                "pic": {
+                  "required": [
+                    "id",
+                    "name",
+                    "hash",
+                    "mime",
+                    "size",
+                    "url",
+                    "provider"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "alternativeText": {
+                      "type": "string"
+                    },
+                    "caption": {
+                      "type": "string"
+                    },
+                    "width": {
+                      "type": "integer"
+                    },
+                    "height": {
+                      "type": "integer"
+                    },
+                    "formats": {
+                      "type": "object"
+                    },
+                    "hash": {
+                      "type": "string"
+                    },
+                    "ext": {
+                      "type": "string"
+                    },
+                    "mime": {
+                      "type": "string"
+                    },
+                    "size": {
+                      "type": "number"
+                    },
+                    "url": {
+                      "type": "string"
+                    },
+                    "previewUrl": {
+                      "type": "string"
+                    },
+                    "provider": {
+                      "type": "string"
+                    },
+                    "provider_metadata": {
+                      "type": "object"
+                    },
+                    "related": {
+                      "type": "string"
+                    },
+                    "created_by": {
+                      "type": "string"
+                    },
+                    "updated_by": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "title": {
+                  "type": "string"
+                },
+                "timestamp": {
+                  "type": "integer"
+                },
+                "camera": {
+                  "type": "string"
+                },
+                "photographer": {
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "first_name": {
+                      "type": "string"
+                    },
+                    "last_name": {
+                      "type": "string"
+                    },
+                    "pic": {
+                      "type": "string"
+                    },
+                    "bio": {
+                      "type": "string"
+                    },
+                    "trips": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "slug": {
+                      "type": "uid"
+                    },
+                    "owned_trips": {
+                      "type": "string"
+                    },
+                    "published_at": {
+                      "type": "string"
+                    },
+                    "created_by": {
+                      "type": "string"
+                    },
+                    "updated_by": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "participants": {
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "first_name": {
+                      "type": "string"
+                    },
+                    "last_name": {
+                      "type": "string"
+                    },
+                    "pic": {
+                      "type": "string"
+                    },
+                    "bio": {
+                      "type": "string"
+                    },
+                    "trips": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "slug": {
+                      "type": "uid"
+                    },
+                    "owned_trips": {
+                      "type": "string"
+                    },
+                    "published_at": {
+                      "type": "string"
+                    },
+                    "created_by": {
+                      "type": "string"
+                    },
+                    "updated_by": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "time_offset_minutes": {
+                  "type": "integer"
+                }
+              }
             }
+          },
+          "location": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

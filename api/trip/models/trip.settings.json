@@ -32,13 +32,9 @@
       "plugin": "upload",
       "required": false
     },
-    "legs": {
-      "collection": "leg",
-      "via": "trip"
-    },
     "participants": {
-      "via": "trips",
-      "collection": "participant"
+      "collection": "participant",
+      "via": "trips"
     },
     "type": {
       "type": "enumeration",
@@ -60,15 +56,16 @@
     "duration_days": {
       "type": "integer"
     },
-    "flag_coords": {
-      "type": "json"
-    },
     "sub_title": {
       "type": "string"
     },
-    "photos": {
-      "collection": "photo",
-      "via": "trip"
+    "Legs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "leg-component.leg-component"
+    },
+    "flag_coords": {
+      "type": "string"
     }
   }
 }

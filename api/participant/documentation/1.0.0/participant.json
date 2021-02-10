@@ -620,12 +620,6 @@
                 "cover_image": {
                   "type": "string"
                 },
-                "legs": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
                 "participants": {
                   "type": "array",
                   "items": {
@@ -644,17 +638,14 @@
                 "duration_days": {
                   "type": "integer"
                 },
-                "flag_coords": {
-                  "type": "object"
-                },
                 "sub_title": {
                   "type": "string"
                 },
-                "photos": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
+                "Legs": {
+                  "type": "component"
+                },
+                "flag_coords": {
+                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"
@@ -691,12 +682,6 @@
               "cover_image": {
                 "type": "string"
               },
-              "legs": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
               "participants": {
                 "type": "array",
                 "items": {
@@ -715,123 +700,13 @@
               "duration_days": {
                 "type": "integer"
               },
-              "flag_coords": {
-                "type": "object"
-              },
               "sub_title": {
                 "type": "string"
               },
-              "photos": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
+              "Legs": {
+                "type": "component"
               },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
-          "photos_in": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "title": {
-                  "type": "string"
-                },
-                "image": {
-                  "type": "string"
-                },
-                "timestamp": {
-                  "type": "string"
-                },
-                "location": {
-                  "type": "object"
-                },
-                "trip": {
-                  "type": "string"
-                },
-                "leg": {
-                  "type": "string"
-                },
-                "camera": {
-                  "type": "string"
-                },
-                "time_offset_minutes": {
-                  "type": "integer"
-                },
-                "participants": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "taker": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "photo_taken": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "title": {
-                "type": "string"
-              },
-              "image": {
-                "type": "string"
-              },
-              "timestamp": {
-                "type": "string"
-              },
-              "location": {
-                "type": "object"
-              },
-              "trip": {
-                "type": "string"
-              },
-              "leg": {
-                "type": "string"
-              },
-              "camera": {
-                "type": "string"
-              },
-              "time_offset_minutes": {
-                "type": "integer"
-              },
-              "participants": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "taker": {
+              "flag_coords": {
                 "type": "string"
               },
               "published_at": {
@@ -872,15 +747,6 @@
             "type": "uid"
           },
           "owned_trips": {
-            "type": "string"
-          },
-          "photos_in": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "photo_taken": {
             "type": "string"
           },
           "published_at": {

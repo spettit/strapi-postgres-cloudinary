@@ -27,11 +27,17 @@
     "timestamp": {
       "type": "biginteger"
     },
-    "location": {
-      "type": "json"
-    },
     "camera": {
       "type": "string"
+    },
+    "photographer": {
+      "model": "participant"
+    },
+    "participants": {
+      "collection": "participant"
+    },
+    "time_offset_minutes": {
+      "type": "biginteger"
     }
   }
 }

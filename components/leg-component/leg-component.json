@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_leg_category_leg_components",
+  "info": {
+    "name": "leg_component",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "mini_points": {
+      "type": "json"
+    },
+    "start": {
+      "type": "datetime"
+    },
+    "distance": {
+      "type": "integer"
+    },
+    "photos": {
+      "type": "component",
+      "repeatable": true,
+      "component": "gallery-component.gallery"
+    },
+    "tracks": {
+      "collection": "track"
+    },
+    "average_speed": {
+      "type": "decimal"
+    },
+    "top_speed": {
+      "type": "decimal"
+    },
+    "highest_altitude": {
+      "type": "integer"
+    },
+    "lowest_altitude": {
+      "type": "integer"
+    },
+    "time_offset_minutes": {
+      "type": "biginteger"
+    }
+  }
+}

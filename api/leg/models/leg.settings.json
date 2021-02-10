@@ -18,12 +18,8 @@
       "type": "datetime"
     },
     "tracks": {
-      "via": "leg",
-      "collection": "track"
-    },
-    "trip": {
-      "via": "legs",
-      "model": "trip"
+      "collection": "track",
+      "via": "leg"
     },
     "slug": {
       "type": "uid",
@@ -54,8 +50,12 @@
       "type": "json"
     },
     "photos": {
-      "via": "leg",
-      "collection": "photo"
+      "type": "component",
+      "repeatable": true,
+      "component": "gallery-component.gallery"
+    },
+    "location": {
+      "type": "string"
     }
   }
 }

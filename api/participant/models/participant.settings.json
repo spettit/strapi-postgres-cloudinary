@@ -32,8 +32,8 @@
       "type": "richtext"
     },
     "trips": {
-      "collection": "trip",
       "via": "participants",
+      "collection": "trip",
       "dominant": true
     },
     "slug": {
@@ -41,14 +41,6 @@
     },
     "owned_trips": {
       "collection": "trip"
-    },
-    "photos_in": {
-      "collection": "photo",
-      "via": "participants"
-    },
-    "photo_taken": {
-      "model": "photo",
-      "via": "taker"
     }
   }
 }
