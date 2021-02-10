@@ -653,6 +653,12 @@
                 "gallery": {
                   "type": "component"
                 },
+                "photos": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -721,6 +727,12 @@
               "gallery": {
                 "type": "component"
               },
+              "photos": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
               "published_at": {
                 "type": "string"
               },
@@ -729,6 +741,52 @@
               },
               "updated_by": {
                 "type": "string"
+              }
+            }
+          },
+          "photos": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "image": {
+                  "type": "string"
+                },
+                "timestamp": {
+                  "type": "string"
+                },
+                "location": {
+                  "type": "object"
+                },
+                "trip": {
+                  "type": "string"
+                },
+                "leg": {
+                  "type": "string"
+                },
+                "participants": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
               }
             }
           },
@@ -760,6 +818,12 @@
           },
           "owned_trips": {
             "type": "string"
+          },
+          "photos": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",

@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "participants",
+  "collectionName": "photos",
   "info": {
-    "name": "Participants",
+    "name": "photo",
     "description": ""
   },
   "options": {
@@ -11,13 +11,10 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "first_name": {
+    "title": {
       "type": "string"
     },
-    "last_name": {
-      "type": "string"
-    },
-    "pic": {
+    "image": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -28,23 +25,24 @@
       "plugin": "upload",
       "required": false
     },
-    "bio": {
-      "type": "richtext"
+    "timestamp": {
+      "type": "string"
     },
-    "trips": {
-      "collection": "trip",
-      "via": "participants",
+    "location": {
+      "type": "json"
+    },
+    "trip": {
+      "model": "trip",
+      "via": "photos"
+    },
+    "leg": {
+      "model": "leg",
+      "via": "photos"
+    },
+    "participants": {
+      "collection": "participant",
+      "via": "photos",
       "dominant": true
-    },
-    "slug": {
-      "type": "uid"
-    },
-    "owned_trips": {
-      "collection": "trip"
-    },
-    "photos": {
-      "via": "participants",
-      "collection": "photo"
     }
   }
 }

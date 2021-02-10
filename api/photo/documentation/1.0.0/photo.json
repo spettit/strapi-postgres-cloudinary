@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/legs": {
+    "/photos": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -12,7 +12,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Leg"
+                    "$ref": "#/components/schemas/Photo"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Leg"
+          "Photo"
         ],
         "parameters": [
           {
@@ -201,7 +201,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Leg"
+                  "$ref": "#/components/schemas/Photo"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Leg"
+          "Photo"
         ],
         "requestBody": {
           "description": "",
@@ -247,14 +247,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewLeg"
+                "$ref": "#/components/schemas/NewPhoto"
               }
             }
           }
         }
       }
     },
-    "/legs/count": {
+    "/photos/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -306,12 +306,12 @@
         },
         "summary": "",
         "tags": [
-          "Leg"
+          "Photo"
         ],
         "parameters": []
       }
     },
-    "/legs/{id}": {
+    "/photos/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -321,7 +321,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Leg"
+                  "$ref": "#/components/schemas/Photo"
                 }
               }
             }
@@ -359,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Leg"
+          "Photo"
         ],
         "parameters": [
           {
@@ -383,7 +383,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Leg"
+                  "$ref": "#/components/schemas/Photo"
                 }
               }
             }
@@ -421,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Leg"
+          "Photo"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewLeg"
+                "$ref": "#/components/schemas/NewPhoto"
               }
             }
           }
@@ -495,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Leg"
+          "Photo"
         ],
         "parameters": [
           {
@@ -514,7 +514,7 @@
   },
   "components": {
     "schemas": {
-      "Leg": {
+      "Photo": {
         "required": [
           "id"
         ],
@@ -525,46 +525,78 @@
           "title": {
             "type": "string"
           },
-          "start": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "tracks": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "title": {
-                  "type": "string"
-                },
-                "points": {
-                  "type": "object"
-                },
-                "leg": {
-                  "type": "string"
-                },
-                "slug": {
-                  "type": "uid"
-                },
-                "minified_points": {
-                  "type": "object"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
+          "image": {
+            "required": [
+              "id",
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "alternativeText": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "formats": {
+                "type": "object"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string"
+              },
+              "previewUrl": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
+          },
+          "timestamp": {
+            "type": "string"
+          },
+          "location": {
+            "type": "object"
           },
           "trip": {
             "required": [
@@ -636,35 +668,74 @@
               }
             }
           },
-          "slug": {
-            "type": "uid"
+          "leg": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "start": {
+                "type": "string"
+              },
+              "tracks": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "trip": {
+                "type": "string"
+              },
+              "slug": {
+                "type": "uid"
+              },
+              "end": {
+                "type": "string"
+              },
+              "distance": {
+                "type": "integer"
+              },
+              "average_speed": {
+                "type": "integer"
+              },
+              "top_speed": {
+                "type": "integer"
+              },
+              "highest_altitude": {
+                "type": "integer"
+              },
+              "lowest_altitude": {
+                "type": "integer"
+              },
+              "time_offset_minutes": {
+                "type": "integer"
+              },
+              "mini_points": {
+                "type": "object"
+              },
+              "photos": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
           },
-          "end": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "distance": {
-            "type": "integer"
-          },
-          "average_speed": {
-            "type": "integer"
-          },
-          "top_speed": {
-            "type": "integer"
-          },
-          "highest_altitude": {
-            "type": "integer"
-          },
-          "lowest_altitude": {
-            "type": "integer"
-          },
-          "time_offset_minutes": {
-            "type": "integer"
-          },
-          "mini_points": {
-            "type": "object"
-          },
-          "photos": {
+          "participants": {
             "type": "array",
             "items": {
               "required": [
@@ -674,25 +745,31 @@
                 "id": {
                   "type": "string"
                 },
-                "title": {
+                "first_name": {
                   "type": "string"
                 },
-                "image": {
+                "last_name": {
                   "type": "string"
                 },
-                "timestamp": {
+                "pic": {
                   "type": "string"
                 },
-                "location": {
-                  "type": "object"
-                },
-                "trip": {
+                "bio": {
                   "type": "string"
                 },
-                "leg": {
+                "trips": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "slug": {
+                  "type": "uid"
+                },
+                "owned_trips": {
                   "type": "string"
                 },
-                "participants": {
+                "photos": {
                   "type": "array",
                   "items": {
                     "type": "string"
@@ -716,53 +793,24 @@
           }
         }
       },
-      "NewLeg": {
+      "NewPhoto": {
         "properties": {
           "title": {
             "type": "string"
           },
-          "start": {
-            "type": "string",
-            "format": "date-time"
+          "timestamp": {
+            "type": "string"
           },
-          "tracks": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "location": {
+            "type": "object"
           },
           "trip": {
             "type": "string"
           },
-          "slug": {
-            "type": "uid"
+          "leg": {
+            "type": "string"
           },
-          "end": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "distance": {
-            "type": "integer"
-          },
-          "average_speed": {
-            "type": "integer"
-          },
-          "top_speed": {
-            "type": "integer"
-          },
-          "highest_altitude": {
-            "type": "integer"
-          },
-          "lowest_altitude": {
-            "type": "integer"
-          },
-          "time_offset_minutes": {
-            "type": "integer"
-          },
-          "mini_points": {
-            "type": "object"
-          },
-          "photos": {
+          "participants": {
             "type": "array",
             "items": {
               "type": "string"
@@ -784,7 +832,7 @@
   },
   "tags": [
     {
-      "name": "Leg"
+      "name": "Photo"
     }
   ]
 }

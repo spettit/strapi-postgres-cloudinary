@@ -70,6 +70,10 @@
       "type": "component",
       "repeatable": true,
       "component": "gallery-picture.gallery"
+    },
+    "photos": {
+      "via": "trip",
+      "collection": "photo"
     }
   }
 }
