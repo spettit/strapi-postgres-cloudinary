@@ -24,7 +24,7 @@
     "title": {
       "type": "string"
     },
-    "timestamp": {
+    "image_timestamp": {
       "type": "biginteger"
     },
     "camera": {

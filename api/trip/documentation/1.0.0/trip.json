@@ -777,7 +777,7 @@
                       "title": {
                         "type": "string"
                       },
-                      "timestamp": {
+                      "image_timestamp": {
                         "type": "integer"
                       },
                       "camera": {
@@ -1072,7 +1072,7 @@
                       "title": {
                         "type": "string"
                       },
-                      "timestamp": {
+                      "image_timestamp": {
                         "type": "integer"
                       },
                       "camera": {
