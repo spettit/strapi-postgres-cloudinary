@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_timeline_component_timelines",
+  "info": {
+    "name": "timeline",
+    "icon": "clock",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "time": {
+      "type": "time"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "photograph": {
+      "type": "component",
+      "repeatable": false,
+      "component": "gallery-component.gallery"
+    }
+  }
+}

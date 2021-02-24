@@ -909,6 +909,209 @@
                       }
                     }
                   }
+                },
+                "timeline_entry": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "id"
+                    ],
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "time": {
+                        "type": "string"
+                      },
+                      "title": {
+                        "type": "string"
+                      },
+                      "description": {
+                        "type": "string"
+                      },
+                      "photograph": {
+                        "type": "object",
+                        "required": [
+                          "id"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "datetime": {
+                            "type": "string",
+                            "format": "date-time"
+                          },
+                          "pic": {
+                            "required": [
+                              "id",
+                              "name",
+                              "hash",
+                              "mime",
+                              "size",
+                              "url",
+                              "provider"
+                            ],
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "name": {
+                                "type": "string"
+                              },
+                              "alternativeText": {
+                                "type": "string"
+                              },
+                              "caption": {
+                                "type": "string"
+                              },
+                              "width": {
+                                "type": "integer"
+                              },
+                              "height": {
+                                "type": "integer"
+                              },
+                              "formats": {
+                                "type": "object"
+                              },
+                              "hash": {
+                                "type": "string"
+                              },
+                              "ext": {
+                                "type": "string"
+                              },
+                              "mime": {
+                                "type": "string"
+                              },
+                              "size": {
+                                "type": "number"
+                              },
+                              "url": {
+                                "type": "string"
+                              },
+                              "previewUrl": {
+                                "type": "string"
+                              },
+                              "provider": {
+                                "type": "string"
+                              },
+                              "provider_metadata": {
+                                "type": "object"
+                              },
+                              "related": {
+                                "type": "string"
+                              },
+                              "created_by": {
+                                "type": "string"
+                              },
+                              "updated_by": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "title": {
+                            "type": "string"
+                          },
+                          "image_timestamp": {
+                            "type": "integer"
+                          },
+                          "camera": {
+                            "type": "string"
+                          },
+                          "photographer": {
+                            "required": [
+                              "id"
+                            ],
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "first_name": {
+                                "type": "string"
+                              },
+                              "last_name": {
+                                "type": "string"
+                              },
+                              "pic": {
+                                "type": "string"
+                              },
+                              "bio": {
+                                "type": "string"
+                              },
+                              "trips": {
+                                "type": "array",
+                                "items": {
+                                  "type": "string"
+                                }
+                              },
+                              "slug": {
+                                "type": "uid"
+                              },
+                              "owned_trips": {
+                                "type": "string"
+                              },
+                              "published_at": {
+                                "type": "string"
+                              },
+                              "created_by": {
+                                "type": "string"
+                              },
+                              "updated_by": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "participants": {
+                            "required": [
+                              "id"
+                            ],
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "first_name": {
+                                "type": "string"
+                              },
+                              "last_name": {
+                                "type": "string"
+                              },
+                              "pic": {
+                                "type": "string"
+                              },
+                              "bio": {
+                                "type": "string"
+                              },
+                              "trips": {
+                                "type": "array",
+                                "items": {
+                                  "type": "string"
+                                }
+                              },
+                              "slug": {
+                                "type": "uid"
+                              },
+                              "owned_trips": {
+                                "type": "string"
+                              },
+                              "published_at": {
+                                "type": "string"
+                              },
+                              "created_by": {
+                                "type": "string"
+                              },
+                              "updated_by": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "time_offset_minutes": {
+                            "type": "integer"
+                          }
+                        }
+                      }
+                    }
+                  }
                 }
               }
             }
@@ -1201,6 +1404,209 @@
                       },
                       "track_slug": {
                         "type": "string"
+                      }
+                    }
+                  }
+                },
+                "timeline_entry": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "id"
+                    ],
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "time": {
+                        "type": "string"
+                      },
+                      "title": {
+                        "type": "string"
+                      },
+                      "description": {
+                        "type": "string"
+                      },
+                      "photograph": {
+                        "type": "object",
+                        "required": [
+                          "id"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "datetime": {
+                            "type": "string",
+                            "format": "date-time"
+                          },
+                          "pic": {
+                            "required": [
+                              "id",
+                              "name",
+                              "hash",
+                              "mime",
+                              "size",
+                              "url",
+                              "provider"
+                            ],
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "name": {
+                                "type": "string"
+                              },
+                              "alternativeText": {
+                                "type": "string"
+                              },
+                              "caption": {
+                                "type": "string"
+                              },
+                              "width": {
+                                "type": "integer"
+                              },
+                              "height": {
+                                "type": "integer"
+                              },
+                              "formats": {
+                                "type": "object"
+                              },
+                              "hash": {
+                                "type": "string"
+                              },
+                              "ext": {
+                                "type": "string"
+                              },
+                              "mime": {
+                                "type": "string"
+                              },
+                              "size": {
+                                "type": "number"
+                              },
+                              "url": {
+                                "type": "string"
+                              },
+                              "previewUrl": {
+                                "type": "string"
+                              },
+                              "provider": {
+                                "type": "string"
+                              },
+                              "provider_metadata": {
+                                "type": "object"
+                              },
+                              "related": {
+                                "type": "string"
+                              },
+                              "created_by": {
+                                "type": "string"
+                              },
+                              "updated_by": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "title": {
+                            "type": "string"
+                          },
+                          "image_timestamp": {
+                            "type": "integer"
+                          },
+                          "camera": {
+                            "type": "string"
+                          },
+                          "photographer": {
+                            "required": [
+                              "id"
+                            ],
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "first_name": {
+                                "type": "string"
+                              },
+                              "last_name": {
+                                "type": "string"
+                              },
+                              "pic": {
+                                "type": "string"
+                              },
+                              "bio": {
+                                "type": "string"
+                              },
+                              "trips": {
+                                "type": "array",
+                                "items": {
+                                  "type": "string"
+                                }
+                              },
+                              "slug": {
+                                "type": "uid"
+                              },
+                              "owned_trips": {
+                                "type": "string"
+                              },
+                              "published_at": {
+                                "type": "string"
+                              },
+                              "created_by": {
+                                "type": "string"
+                              },
+                              "updated_by": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "participants": {
+                            "required": [
+                              "id"
+                            ],
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "first_name": {
+                                "type": "string"
+                              },
+                              "last_name": {
+                                "type": "string"
+                              },
+                              "pic": {
+                                "type": "string"
+                              },
+                              "bio": {
+                                "type": "string"
+                              },
+                              "trips": {
+                                "type": "array",
+                                "items": {
+                                  "type": "string"
+                                }
+                              },
+                              "slug": {
+                                "type": "uid"
+                              },
+                              "owned_trips": {
+                                "type": "string"
+                              },
+                              "published_at": {
+                                "type": "string"
+                              },
+                              "created_by": {
+                                "type": "string"
+                              },
+                              "updated_by": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "time_offset_minutes": {
+                            "type": "integer"
+                          }
+                        }
                       }
                     }
                   }

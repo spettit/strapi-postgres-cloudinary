@@ -17,10 +17,6 @@
     "points": {
       "type": "json"
     },
-    "leg": {
-      "via": "tracks",
-      "model": "leg"
-    },
     "slug": {
       "type": "uid",
       "targetField": "title"

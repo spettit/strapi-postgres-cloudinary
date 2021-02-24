@@ -528,70 +528,6 @@
           "points": {
             "type": "object"
           },
-          "leg": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "title": {
-                "type": "string"
-              },
-              "start": {
-                "type": "string"
-              },
-              "tracks": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "slug": {
-                "type": "uid"
-              },
-              "end": {
-                "type": "string"
-              },
-              "distance": {
-                "type": "integer"
-              },
-              "average_speed": {
-                "type": "integer"
-              },
-              "top_speed": {
-                "type": "integer"
-              },
-              "highest_altitude": {
-                "type": "integer"
-              },
-              "lowest_altitude": {
-                "type": "integer"
-              },
-              "time_offset_minutes": {
-                "type": "integer"
-              },
-              "mini_points": {
-                "type": "object"
-              },
-              "photos": {
-                "type": "component"
-              },
-              "location": {
-                "type": "string"
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
           "slug": {
             "type": "uid"
           },
@@ -608,9 +544,6 @@
           },
           "points": {
             "type": "object"
-          },
-          "leg": {
-            "type": "string"
           },
           "slug": {
             "type": "uid"
