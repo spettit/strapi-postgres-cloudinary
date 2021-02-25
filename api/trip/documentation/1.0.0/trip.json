@@ -921,10 +921,6 @@
                       "id": {
                         "type": "string"
                       },
-                      "datetime": {
-                        "type": "string",
-                        "format": "date-time"
-                      },
                       "title": {
                         "type": "string"
                       },
@@ -1110,6 +1106,10 @@
                             "type": "integer"
                           }
                         }
+                      },
+                      "date_time": {
+                        "type": "string",
+                        "format": "date-time"
                       }
                     }
                   }
@@ -1420,10 +1420,6 @@
                       "id": {
                         "type": "string"
                       },
-                      "datetime": {
-                        "type": "string",
-                        "format": "date-time"
-                      },
                       "title": {
                         "type": "string"
                       },
@@ -1609,6 +1605,10 @@
                             "type": "integer"
                           }
                         }
+                      },
+                      "date_time": {
+                        "type": "string",
+                        "format": "date-time"
                       }
                     }
                   }

@@ -7,9 +7,6 @@
   },
   "options": {},
   "attributes": {
-    "datetime": {
-      "type": "datetime"
-    },
     "title": {
       "type": "string"
     },
@@ -20,6 +17,9 @@
       "type": "component",
       "repeatable": false,
       "component": "gallery-component.gallery"
+    },
+    "date_time": {
+      "type": "datetime"
     }
   }
 }
