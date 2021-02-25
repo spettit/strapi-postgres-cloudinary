@@ -7,8 +7,8 @@
   },
   "options": {},
   "attributes": {
-    "time": {
-      "type": "time"
+    "datetime": {
+      "type": "datetime"
     },
     "title": {
       "type": "string"

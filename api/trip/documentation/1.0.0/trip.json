@@ -921,8 +921,9 @@
                       "id": {
                         "type": "string"
                       },
-                      "time": {
-                        "type": "string"
+                      "datetime": {
+                        "type": "string",
+                        "format": "date-time"
                       },
                       "title": {
                         "type": "string"
@@ -1419,8 +1420,9 @@
                       "id": {
                         "type": "string"
                       },
-                      "time": {
-                        "type": "string"
+                      "datetime": {
+                        "type": "string",
+                        "format": "date-time"
                       },
                       "title": {
                         "type": "string"
