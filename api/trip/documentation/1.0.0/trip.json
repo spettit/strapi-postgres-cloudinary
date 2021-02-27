@@ -528,7 +528,7 @@
           "slug": {
             "type": "uid"
           },
-          "date": {
+          "start_date": {
             "type": "string",
             "format": "date"
           },
@@ -1187,6 +1187,10 @@
           "flag_coords": {
             "type": "object"
           },
+          "end_date": {
+            "type": "string",
+            "format": "date"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -1201,7 +1205,7 @@
           "slug": {
             "type": "uid"
           },
-          "date": {
+          "start_date": {
             "type": "string",
             "format": "date"
           },
@@ -1752,6 +1756,10 @@
           },
           "flag_coords": {
             "type": "object"
+          },
+          "end_date": {
+            "type": "string",
+            "format": "date"
           },
           "published_at": {
             "type": "string",

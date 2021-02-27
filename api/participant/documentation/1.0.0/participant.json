@@ -614,7 +614,7 @@
                 "slug": {
                   "type": "uid"
                 },
-                "date": {
+                "start_date": {
                   "type": "string"
                 },
                 "cover_image": {
@@ -647,6 +647,9 @@
                 "flag_coords": {
                   "type": "object"
                 },
+                "end_date": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -676,7 +679,7 @@
               "slug": {
                 "type": "uid"
               },
-              "date": {
+              "start_date": {
                 "type": "string"
               },
               "cover_image": {
@@ -708,6 +711,9 @@
               },
               "flag_coords": {
                 "type": "object"
+              },
+              "end_date": {
+                "type": "string"
               },
               "published_at": {
                 "type": "string"

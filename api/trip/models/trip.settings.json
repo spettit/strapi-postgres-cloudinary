@@ -18,7 +18,7 @@
       "type": "uid",
       "targetField": "title"
     },
-    "date": {
+    "start_date": {
       "type": "date"
     },
     "cover_image": {
@@ -66,6 +66,9 @@
     },
     "flag_coords": {
       "type": "json"
+    },
+    "end_date": {
+      "type": "date"
     }
   }
 }

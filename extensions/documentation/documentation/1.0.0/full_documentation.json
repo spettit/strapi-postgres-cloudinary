@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "02/27/2021 3:27:57 PM"
+    "x-generation-date": "02/27/2021 3:30:47 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4290,7 +4290,7 @@
                 "slug": {
                   "type": "uid"
                 },
-                "date": {
+                "start_date": {
                   "type": "string"
                 },
                 "cover_image": {
@@ -4323,6 +4323,9 @@
                 "flag_coords": {
                   "type": "object"
                 },
+                "end_date": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -4352,7 +4355,7 @@
               "slug": {
                 "type": "uid"
               },
-              "date": {
+              "start_date": {
                 "type": "string"
               },
               "cover_image": {
@@ -4384,6 +4387,9 @@
               },
               "flag_coords": {
                 "type": "object"
+              },
+              "end_date": {
+                "type": "string"
               },
               "published_at": {
                 "type": "string"
@@ -4618,7 +4624,7 @@
           "slug": {
             "type": "uid"
           },
-          "date": {
+          "start_date": {
             "type": "string",
             "format": "date"
           },
@@ -5277,6 +5283,10 @@
           "flag_coords": {
             "type": "object"
           },
+          "end_date": {
+            "type": "string",
+            "format": "date"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -5291,7 +5301,7 @@
           "slug": {
             "type": "uid"
           },
-          "date": {
+          "start_date": {
             "type": "string",
             "format": "date"
           },
@@ -5842,6 +5852,10 @@
           },
           "flag_coords": {
             "type": "object"
+          },
+          "end_date": {
+            "type": "string",
+            "format": "date"
           },
           "published_at": {
             "type": "string",
