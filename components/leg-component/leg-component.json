@@ -19,6 +19,17 @@
     "distance": {
       "type": "integer"
     },
+    "cover_image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
     "photos": {
       "type": "component",
       "repeatable": true,
