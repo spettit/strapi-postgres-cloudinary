@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "02/27/2021 3:30:47 PM"
+    "x-generation-date": "02/28/2021 7:51:58 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5073,7 +5073,7 @@
                     }
                   }
                 },
-                "timeline_entry": {
+                "event": {
                   "type": "array",
                   "items": {
                     "type": "object",
@@ -5090,187 +5090,92 @@
                       "description": {
                         "type": "string"
                       },
-                      "photograph": {
-                        "type": "object",
-                        "required": [
-                          "id"
-                        ],
-                        "properties": {
-                          "id": {
-                            "type": "string"
-                          },
-                          "datetime": {
-                            "type": "string",
-                            "format": "date-time"
-                          },
-                          "pic": {
-                            "required": [
-                              "id",
-                              "name",
-                              "hash",
-                              "mime",
-                              "size",
-                              "url",
-                              "provider"
-                            ],
-                            "properties": {
-                              "id": {
-                                "type": "string"
-                              },
-                              "name": {
-                                "type": "string"
-                              },
-                              "alternativeText": {
-                                "type": "string"
-                              },
-                              "caption": {
-                                "type": "string"
-                              },
-                              "width": {
-                                "type": "integer"
-                              },
-                              "height": {
-                                "type": "integer"
-                              },
-                              "formats": {
-                                "type": "object"
-                              },
-                              "hash": {
-                                "type": "string"
-                              },
-                              "ext": {
-                                "type": "string"
-                              },
-                              "mime": {
-                                "type": "string"
-                              },
-                              "size": {
-                                "type": "number"
-                              },
-                              "url": {
-                                "type": "string"
-                              },
-                              "previewUrl": {
-                                "type": "string"
-                              },
-                              "provider": {
-                                "type": "string"
-                              },
-                              "provider_metadata": {
-                                "type": "object"
-                              },
-                              "related": {
-                                "type": "string"
-                              },
-                              "created_by": {
-                                "type": "string"
-                              },
-                              "updated_by": {
-                                "type": "string"
-                              }
+                      "display_datetime": {
+                        "type": "string",
+                        "format": "date-time"
+                      },
+                      "type": {
+                        "type": "string",
+                        "enum": [
+                          "event",
+                          "photo",
+                          "film"
+                        ]
+                      },
+                      "location": {
+                        "type": "object"
+                      },
+                      "media": {
+                        "type": "array",
+                        "items": {
+                          "required": [
+                            "id",
+                            "name",
+                            "hash",
+                            "mime",
+                            "size",
+                            "url",
+                            "provider"
+                          ],
+                          "properties": {
+                            "id": {
+                              "type": "string"
+                            },
+                            "name": {
+                              "type": "string"
+                            },
+                            "alternativeText": {
+                              "type": "string"
+                            },
+                            "caption": {
+                              "type": "string"
+                            },
+                            "width": {
+                              "type": "integer"
+                            },
+                            "height": {
+                              "type": "integer"
+                            },
+                            "formats": {
+                              "type": "object"
+                            },
+                            "hash": {
+                              "type": "string"
+                            },
+                            "ext": {
+                              "type": "string"
+                            },
+                            "mime": {
+                              "type": "string"
+                            },
+                            "size": {
+                              "type": "number"
+                            },
+                            "url": {
+                              "type": "string"
+                            },
+                            "previewUrl": {
+                              "type": "string"
+                            },
+                            "provider": {
+                              "type": "string"
+                            },
+                            "provider_metadata": {
+                              "type": "object"
+                            },
+                            "related": {
+                              "type": "string"
+                            },
+                            "created_by": {
+                              "type": "string"
+                            },
+                            "updated_by": {
+                              "type": "string"
                             }
-                          },
-                          "title": {
-                            "type": "string"
-                          },
-                          "image_timestamp": {
-                            "type": "integer"
-                          },
-                          "camera": {
-                            "type": "string"
-                          },
-                          "photographer": {
-                            "required": [
-                              "id"
-                            ],
-                            "properties": {
-                              "id": {
-                                "type": "string"
-                              },
-                              "first_name": {
-                                "type": "string"
-                              },
-                              "last_name": {
-                                "type": "string"
-                              },
-                              "pic": {
-                                "type": "string"
-                              },
-                              "bio": {
-                                "type": "string"
-                              },
-                              "trips": {
-                                "type": "array",
-                                "items": {
-                                  "type": "string"
-                                }
-                              },
-                              "slug": {
-                                "type": "uid"
-                              },
-                              "owned_trips": {
-                                "type": "string"
-                              },
-                              "published_at": {
-                                "type": "string"
-                              },
-                              "created_by": {
-                                "type": "string"
-                              },
-                              "updated_by": {
-                                "type": "string"
-                              }
-                            }
-                          },
-                          "participants": {
-                            "required": [
-                              "id"
-                            ],
-                            "properties": {
-                              "id": {
-                                "type": "string"
-                              },
-                              "first_name": {
-                                "type": "string"
-                              },
-                              "last_name": {
-                                "type": "string"
-                              },
-                              "pic": {
-                                "type": "string"
-                              },
-                              "bio": {
-                                "type": "string"
-                              },
-                              "trips": {
-                                "type": "array",
-                                "items": {
-                                  "type": "string"
-                                }
-                              },
-                              "slug": {
-                                "type": "uid"
-                              },
-                              "owned_trips": {
-                                "type": "string"
-                              },
-                              "published_at": {
-                                "type": "string"
-                              },
-                              "created_by": {
-                                "type": "string"
-                              },
-                              "updated_by": {
-                                "type": "string"
-                              }
-                            }
-                          },
-                          "time_offset_minutes": {
-                            "type": "integer"
                           }
                         }
                       },
-                      "date_time": {
+                      "recorded_datetime": {
                         "type": "string",
                         "format": "date-time"
                       }
@@ -5643,7 +5548,7 @@
                     }
                   }
                 },
-                "timeline_entry": {
+                "event": {
                   "type": "array",
                   "items": {
                     "type": "object",
@@ -5660,187 +5565,92 @@
                       "description": {
                         "type": "string"
                       },
-                      "photograph": {
-                        "type": "object",
-                        "required": [
-                          "id"
-                        ],
-                        "properties": {
-                          "id": {
-                            "type": "string"
-                          },
-                          "datetime": {
-                            "type": "string",
-                            "format": "date-time"
-                          },
-                          "pic": {
-                            "required": [
-                              "id",
-                              "name",
-                              "hash",
-                              "mime",
-                              "size",
-                              "url",
-                              "provider"
-                            ],
-                            "properties": {
-                              "id": {
-                                "type": "string"
-                              },
-                              "name": {
-                                "type": "string"
-                              },
-                              "alternativeText": {
-                                "type": "string"
-                              },
-                              "caption": {
-                                "type": "string"
-                              },
-                              "width": {
-                                "type": "integer"
-                              },
-                              "height": {
-                                "type": "integer"
-                              },
-                              "formats": {
-                                "type": "object"
-                              },
-                              "hash": {
-                                "type": "string"
-                              },
-                              "ext": {
-                                "type": "string"
-                              },
-                              "mime": {
-                                "type": "string"
-                              },
-                              "size": {
-                                "type": "number"
-                              },
-                              "url": {
-                                "type": "string"
-                              },
-                              "previewUrl": {
-                                "type": "string"
-                              },
-                              "provider": {
-                                "type": "string"
-                              },
-                              "provider_metadata": {
-                                "type": "object"
-                              },
-                              "related": {
-                                "type": "string"
-                              },
-                              "created_by": {
-                                "type": "string"
-                              },
-                              "updated_by": {
-                                "type": "string"
-                              }
+                      "display_datetime": {
+                        "type": "string",
+                        "format": "date-time"
+                      },
+                      "type": {
+                        "type": "string",
+                        "enum": [
+                          "event",
+                          "photo",
+                          "film"
+                        ]
+                      },
+                      "location": {
+                        "type": "object"
+                      },
+                      "media": {
+                        "type": "array",
+                        "items": {
+                          "required": [
+                            "id",
+                            "name",
+                            "hash",
+                            "mime",
+                            "size",
+                            "url",
+                            "provider"
+                          ],
+                          "properties": {
+                            "id": {
+                              "type": "string"
+                            },
+                            "name": {
+                              "type": "string"
+                            },
+                            "alternativeText": {
+                              "type": "string"
+                            },
+                            "caption": {
+                              "type": "string"
+                            },
+                            "width": {
+                              "type": "integer"
+                            },
+                            "height": {
+                              "type": "integer"
+                            },
+                            "formats": {
+                              "type": "object"
+                            },
+                            "hash": {
+                              "type": "string"
+                            },
+                            "ext": {
+                              "type": "string"
+                            },
+                            "mime": {
+                              "type": "string"
+                            },
+                            "size": {
+                              "type": "number"
+                            },
+                            "url": {
+                              "type": "string"
+                            },
+                            "previewUrl": {
+                              "type": "string"
+                            },
+                            "provider": {
+                              "type": "string"
+                            },
+                            "provider_metadata": {
+                              "type": "object"
+                            },
+                            "related": {
+                              "type": "string"
+                            },
+                            "created_by": {
+                              "type": "string"
+                            },
+                            "updated_by": {
+                              "type": "string"
                             }
-                          },
-                          "title": {
-                            "type": "string"
-                          },
-                          "image_timestamp": {
-                            "type": "integer"
-                          },
-                          "camera": {
-                            "type": "string"
-                          },
-                          "photographer": {
-                            "required": [
-                              "id"
-                            ],
-                            "properties": {
-                              "id": {
-                                "type": "string"
-                              },
-                              "first_name": {
-                                "type": "string"
-                              },
-                              "last_name": {
-                                "type": "string"
-                              },
-                              "pic": {
-                                "type": "string"
-                              },
-                              "bio": {
-                                "type": "string"
-                              },
-                              "trips": {
-                                "type": "array",
-                                "items": {
-                                  "type": "string"
-                                }
-                              },
-                              "slug": {
-                                "type": "uid"
-                              },
-                              "owned_trips": {
-                                "type": "string"
-                              },
-                              "published_at": {
-                                "type": "string"
-                              },
-                              "created_by": {
-                                "type": "string"
-                              },
-                              "updated_by": {
-                                "type": "string"
-                              }
-                            }
-                          },
-                          "participants": {
-                            "required": [
-                              "id"
-                            ],
-                            "properties": {
-                              "id": {
-                                "type": "string"
-                              },
-                              "first_name": {
-                                "type": "string"
-                              },
-                              "last_name": {
-                                "type": "string"
-                              },
-                              "pic": {
-                                "type": "string"
-                              },
-                              "bio": {
-                                "type": "string"
-                              },
-                              "trips": {
-                                "type": "array",
-                                "items": {
-                                  "type": "string"
-                                }
-                              },
-                              "slug": {
-                                "type": "uid"
-                              },
-                              "owned_trips": {
-                                "type": "string"
-                              },
-                              "published_at": {
-                                "type": "string"
-                              },
-                              "created_by": {
-                                "type": "string"
-                              },
-                              "updated_by": {
-                                "type": "string"
-                              }
-                            }
-                          },
-                          "time_offset_minutes": {
-                            "type": "integer"
                           }
                         }
                       },
-                      "date_time": {
+                      "recorded_datetime": {
                         "type": "string",
                         "format": "date-time"
                       }

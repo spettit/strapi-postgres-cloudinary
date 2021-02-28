@@ -55,7 +55,7 @@
       "repeatable": true,
       "component": "track-component.track-component"
     },
-    "timeline_entry": {
+    "event": {
       "type": "component",
       "repeatable": true,
       "component": "timeline-component.timeline"

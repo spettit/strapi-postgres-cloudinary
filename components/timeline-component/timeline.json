@@ -13,12 +13,32 @@
     "description": {
       "type": "richtext"
     },
-    "photograph": {
-      "type": "component",
-      "repeatable": false,
-      "component": "gallery-component.gallery"
+    "display_datetime": {
+      "type": "datetime"
     },
-    "date_time": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "event",
+        "photo",
+        "film"
+      ]
+    },
+    "location": {
+      "type": "json"
+    },
+    "media": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "recorded_datetime": {
       "type": "datetime"
     }
   }
