@@ -14,7 +14,7 @@
       "type": "richtext"
     },
     "display_datetime": {
-      "type": "datetime"
+      "type": "time"
     },
     "type": {
       "type": "enumeration",

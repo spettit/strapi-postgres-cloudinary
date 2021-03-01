@@ -977,7 +977,7 @@
                     }
                   }
                 },
-                "event": {
+                "events": {
                   "type": "array",
                   "items": {
                     "type": "object",
@@ -995,8 +995,7 @@
                         "type": "string"
                       },
                       "display_datetime": {
-                        "type": "string",
-                        "format": "date-time"
+                        "type": "string"
                       },
                       "type": {
                         "type": "string",
@@ -1452,7 +1451,7 @@
                     }
                   }
                 },
-                "event": {
+                "events": {
                   "type": "array",
                   "items": {
                     "type": "object",
@@ -1470,8 +1469,7 @@
                         "type": "string"
                       },
                       "display_datetime": {
-                        "type": "string",
-                        "format": "date-time"
+                        "type": "string"
                       },
                       "type": {
                         "type": "string",
