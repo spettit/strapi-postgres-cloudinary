@@ -38,6 +38,9 @@
     },
     "time_offset_minutes": {
       "type": "biginteger"
+    },
+    "hidden": {
+      "type": "boolean"
     }
   }
 }

@@ -938,6 +938,9 @@
                       },
                       "time_offset_minutes": {
                         "type": "integer"
+                      },
+                      "hidden": {
+                        "type": "boolean"
                       }
                     }
                   }
@@ -1412,6 +1415,9 @@
                       },
                       "time_offset_minutes": {
                         "type": "integer"
+                      },
+                      "hidden": {
+                        "type": "boolean"
                       }
                     }
                   }
