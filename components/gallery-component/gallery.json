@@ -41,6 +41,12 @@
     },
     "hidden": {
       "type": "boolean"
+    },
+    "lat": {
+      "type": "float"
+    },
+    "lng": {
+      "type": "float"
     }
   }
 }

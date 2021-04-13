@@ -650,6 +650,9 @@
                 "end_date": {
                   "type": "string"
                 },
+                "minutes_travelling": {
+                  "type": "integer"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -714,6 +717,9 @@
               },
               "end_date": {
                 "type": "string"
+              },
+              "minutes_travelling": {
+                "type": "integer"
               },
               "published_at": {
                 "type": "string"

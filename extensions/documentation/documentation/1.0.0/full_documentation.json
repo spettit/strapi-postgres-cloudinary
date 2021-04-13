@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "04/10/2021 12:06:01 PM"
+    "x-generation-date": "04/13/2021 9:52:18 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4326,6 +4326,9 @@
                 "end_date": {
                   "type": "string"
                 },
+                "minutes_travelling": {
+                  "type": "integer"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -4390,6 +4393,9 @@
               },
               "end_date": {
                 "type": "string"
+              },
+              "minutes_travelling": {
+                "type": "integer"
               },
               "published_at": {
                 "type": "string"
@@ -5037,6 +5043,12 @@
                       },
                       "hidden": {
                         "type": "boolean"
+                      },
+                      "lat": {
+                        "type": "number"
+                      },
+                      "lng": {
+                        "type": "number"
                       }
                     }
                   }
@@ -5183,6 +5195,10 @@
                       }
                     }
                   }
+                },
+                "end": {
+                  "type": "string",
+                  "format": "date-time"
                 }
               }
             }
@@ -5193,6 +5209,9 @@
           "end_date": {
             "type": "string",
             "format": "date"
+          },
+          "minutes_travelling": {
+            "type": "integer"
           },
           "published_at": {
             "type": "string",
@@ -5514,6 +5533,12 @@
                       },
                       "hidden": {
                         "type": "boolean"
+                      },
+                      "lat": {
+                        "type": "number"
+                      },
+                      "lng": {
+                        "type": "number"
                       }
                     }
                   }
@@ -5660,6 +5685,10 @@
                       }
                     }
                   }
+                },
+                "end": {
+                  "type": "string",
+                  "format": "date-time"
                 }
               }
             }
@@ -5670,6 +5699,9 @@
           "end_date": {
             "type": "string",
             "format": "date"
+          },
+          "minutes_travelling": {
+            "type": "integer"
           },
           "published_at": {
             "type": "string",

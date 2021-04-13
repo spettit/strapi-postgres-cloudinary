@@ -941,6 +941,12 @@
                       },
                       "hidden": {
                         "type": "boolean"
+                      },
+                      "lat": {
+                        "type": "number"
+                      },
+                      "lng": {
+                        "type": "number"
                       }
                     }
                   }
@@ -1087,6 +1093,10 @@
                       }
                     }
                   }
+                },
+                "end": {
+                  "type": "string",
+                  "format": "date-time"
                 }
               }
             }
@@ -1097,6 +1107,9 @@
           "end_date": {
             "type": "string",
             "format": "date"
+          },
+          "minutes_travelling": {
+            "type": "integer"
           },
           "published_at": {
             "type": "string",
@@ -1418,6 +1431,12 @@
                       },
                       "hidden": {
                         "type": "boolean"
+                      },
+                      "lat": {
+                        "type": "number"
+                      },
+                      "lng": {
+                        "type": "number"
                       }
                     }
                   }
@@ -1564,6 +1583,10 @@
                       }
                     }
                   }
+                },
+                "end": {
+                  "type": "string",
+                  "format": "date-time"
                 }
               }
             }
@@ -1574,6 +1597,9 @@
           "end_date": {
             "type": "string",
             "format": "date"
+          },
+          "minutes_travelling": {
+            "type": "integer"
           },
           "published_at": {
             "type": "string",
